@@ -1,0 +1,174 @@
+:root {
+    --blue: #7851A9;
+    --bluelight:#D3C1EB;
+    --buttonHoverBg: #E8E2F4;
+    --lightGrey: rgb(230, 236, 240);
+    --spacing: 15px;
+    --greytext: rgb(101,119,134);
+    --greybuttontext :rgb(0,0,0,0.34);
+}
+*{
+    outline: none !important;
+}
+h1 {
+    font-size: 22px;
+    font-weight: 1000;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--blue);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 100%;
+}
+button {
+    background-color: transparent;
+    border: none;
+    color: var(--greybuttontext);
+}
+nav a {
+    display: block;
+    padding: 10px;
+    font-size: 30px;
+    margin-bottom: 14px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px; /* Add rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+nav a:nth-child(1) {
+    color: var(--blue);
+    font-size: 36px;
+}
+
+nav a:not(:nth-child(1)):hover {
+    background-color: var(--buttonHoverBg);
+}
+.mainSectionContainer {
+    padding: 0;
+    border-left: 1px solid var(--lightGrey);
+    border-right: 1px solid var(--lightGrey);
+    display: flex;
+    flex-direction: column;
+}
+.titleContainer{
+    height: 53px;
+    padding: 0 var(--spacing);
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid var(--lightGrey);
+    flex-shrink: 0;
+}
+.titleContainer h1 {
+    flex: 1;
+}
+.postFormContainer{
+    display: flex;
+    padding: var(--spacing);
+    border-bottom: 10px solid rgb(228, 228, 228);
+    flex-shrink: 0;
+}
+.userImageContainer{
+    width: 50px;
+    height: 30px;
+}
+.userImageContainer img{
+    width: 100%;
+    border-radius: 50%;
+    background-color: white;
+}
+.textAreaContainer{
+    flex: 1;
+    padding-left: var(--spacing);
+}
+.textAreaContainer textarea{
+    width: 100%;
+    border: none;
+    resize: none;
+    font-size: 20px;
+}
+#submitPostButton{
+    background-color: white; 
+    color: var(--blue); 
+    border: 2px solid var(--blue);
+    border-radius: 40px;
+    padding: 7px 17px;
+}
+
+#submitPostButton:disabled{
+    color: var(--bluelight); 
+    border: 2px solid var(--bluelight);
+}
+.post{
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing);
+    cursor: pointer;
+    border-bottom: 1px solid var(--lightGrey);
+}
+.mainContentContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+.postContentContainer{
+    padding-left: var(--spacing);
+    display: flex;
+    flex-direction: column
+}
+.username,
+.timestamp{
+    color: var(--greytext);
+}
+.displayName{
+    font-weight: bold;
+}
+
+.postFooter{
+    display: flex;
+    align-items: center;
+}
+.postFooter .postButtonContainer{
+    flex: 1;
+    display: flex;
+}
+.postFooter .postButtonContainer button{
+    padding: 3px 5px;
+    
+}
+
+.header a,
+.header span{
+    padding-right: 5px;
+}
+
+.postButtonContainer button:hover{
+    background-color: var(--buttonHoverBg);
+    color: var(--blue);
+    border-radius: 50%;
+}
+button i,
+button span{
+    pointer-events: none;
+}
+.postButtonContainer.red button.active{
+    color: #e74c3c
+}
+
+
+
