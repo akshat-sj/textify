@@ -17,7 +17,7 @@ npm start
 
 ## Demonstration
 
-![video](https://github.com/akshat-sj/textify/blob/main/public/videos/textifyvid.mp4)
+https://github.com/akshat-sj/textify/assets/116817944/733b3dff-1af6-436e-bc2b-37e5a3a613ad
 
 
 
